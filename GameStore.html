@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amaze Games</title>
+        <style>
+            .c1{
+                
+                background-image: url(5258892.jpg);
+                background-size: cover;
+            }
+            #d1{
+                position: absolute;
+                top: 30%;
+                bottom: 50%;
+                transform: translate(-50%, -50%);
+                left:50%;
+                border-radius: 5px
+            }
+            #d2{
+                background-color: rgba(234, 222, 222, 0.8);
+            }
+        </style>
+        <script>
+            
+            function validation(){
+                var x=0;
+                if(document.f1.fname.value.length ==0)
+                {
+                    var ele=document.getElementById("da1")
+                    ele.innerHTML="* this field is required"
+                    ele.style.setProperty("color","red")   
+                }
+                else{
+                    var ele=document.getElementById("da1")
+                    ele.innerHTML=""
+                    x=x+1;
+                }
+                if(document.f1.lname.value.length ==0)
+                {
+                    var ele=document.getElementById("da2")
+                    ele.innerHTML="* this field is required"
+                    ele.style.setProperty("color","red")
+                }
+                else{
+                    var ele=document.getElementById("da2")
+                    ele.innerHTML=""
+                    x=x+1;
+                }
+                if(document.f1.age.value.length ==0)
+                {
+                    var ele=document.getElementById("da3")
+                    ele.innerHTML="* this field is required"
+                    ele.style.setProperty("color","red")
+                    }
+                else{
+                    var ele=document.getElementById("da3")
+                    ele.innerHTML=""
+                    x=x+1;
+                }
+                if(document.f1.age.value.length ==0)
+                {
+                    var ele=document.getElementById("da4")
+                    ele.innerHTML="* this field is required"
+                    ele.style.setProperty("color","red")
+                    }
+                else{
+                    var ele=document.getElementById("da4")
+                    ele.innerHTML=""
+                    x=x+1;
+                }if(document.f1.dob.value.length ==0)
+                {
+                    var ele=document.getElementById("da5")
+                    ele.innerHTML="* this field is required"
+                    ele.style.setProperty("color","red")
+                }
+                else{
+                    var ele=document.getElementById("da5")
+                    ele.innerHTML=""
+                    x=x+1;
+                }if(document.f1.pno.value.length == 0)
+                {
+                    var ele=document.getElementById("da6")
+                    ele.innerHTML="* this field is required"
+                    ele.style.setProperty("color","red")
+                }
+                else if(document.f1.pno.value.length <10)
+                {
+                    var ele=document.getElementById("da6")
+                    ele.innerHTML="length should be 10"
+                    ele.style.setProperty("color","red")
+                }
+                else{
+                    var ele=document.getElementById("da6")
+                    ele.innerHTML=""
+                    x=x+1;
+                }
+                if(x==6)
+                {
+                    window.location.replace("C:\\Users\\JITHIN V J\\OneDrive\\Desktop\\WUID\\Web Project\\intro.html")
+                }
+            }
+        </script>
+    </head>
+    <body class="c1">
+        <h1 style="text-align: center ; color: aliceblue; box-shadow: 10;" >REGISTRATION FORM</h1>
+        <div>
+            <div id="d1">
+                <form name="f1" id="d2" action="insert" method="get">
+                    <table >
+                        <tr>
+                            <td>
+                                <b>First Name :</b> 
+                            </td>
+                            <td>
+                                <input type="text" name="fname" required>
+                            </td>
+                            
+                        </tr>
+                        <tr >
+                            <td>
+
+                            </td>
+                            <td id="da1">
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Last Name :</b>
+                            </td>
+                            <td>
+                                <input type="text" name="lname" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td id ="da2" >
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>UserName :</b>
+                            </td>
+                            <td>
+                                <input type="text" name="uname" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td id="da3">
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Password :</b>
+                            </td>
+                            <td>
+                                <input type="password" name="pass" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td id="da3">
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Age :</b>  
+                            </td>
+                            <td>
+                                <input type="text" name="age" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td id="da4">
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Date-Of-Birth :</b> 
+                            </td>    
+                            <td>
+                                <input type="text" name="dob" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td id="da5">
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr >
+                            <td>
+                                <b>Phone Number :</b> 
+                            </td>    
+                            <td>
+                                <input type="text" name="pno" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               Already registered ? <a href="C:\Users\JITHIN V J\OneDrive\Desktop\WUID\Web Project\loginpage.html">Login</a>
+                            
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td id="da6">
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                   
+                            </td>
+                        </tr>   
+                        <tr>
+
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                <input type="submit" onclick="validation()" value="Submit">   
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </form>
+            </div>    
+        </div>        
+    </body>
+</html>
